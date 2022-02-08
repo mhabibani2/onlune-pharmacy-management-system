@@ -1,0 +1,105 @@
+.flip-card {
+  background-color: transparent;
+  border-radius:20px;
+  box-shadow:0px 0px 15px 0px rgb(19, 19, 18);
+  width: 300px;
+  height: 200px;
+  padding: 0;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; 
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.search-form
+{
+  width:99%;
+  margin:0px auto;
+  display: block;
+}
+.search-form form{
+  display: block;
+  width:90%;
+  margin:0px auto;
+}
+.search-form form input{
+  width:69%;
+  display:inline-block;
+  padding:12px;
+  border:0px;
+  outline:none;
+}
+.search-form form button
+{
+  width:29%;
+  padding:7px;
+  outline:none;
+  background-color:darkslategrey;
+  border:0px;
+  color:#fff;
+  font-size:20px;
+  border-radius:2px;
+  margin-left:-5px;
+}
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: rgb(247, 243, 243);
+  color: black;
+  
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgb(126, 236, 222);
+  color:black;
+  border-radius:20px;
+  transform: rotateY(180deg);
+}
+*
+{
+  margin:0;
+  padding: 0;
+}
+.setcard {
+  display: flex;
+  padding: 0px 0px 0px 21px;
+  justify-content:space-between;
+}
+
+.orderbutton
+ {
+  background: rgb(221, 54, 54);
+    border-radius: 5px;
+    color:black;
+    padding: 10px 30px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 35px;
+    cursor: pointer;
+  }
+  .setcard
+  {
+    padding: 10px;
+  }

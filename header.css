@@ -1,0 +1,18 @@
+*{
+    margin:0;
+    padding:0;
+    
+    }
+      .head
+    {
+        height:100px;
+        width:100%;
+      font-size: 150%;
+        background-color:#04AA6D;
+      text-align: center;
+      color: white;
+      letter-spacing: 0.4rem;
+      }
+      .headi{
+        padding-top: 25px;
+      }

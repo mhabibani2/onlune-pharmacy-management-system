@@ -1,0 +1,117 @@
+*
+{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+  }
+          
+      body {
+          font-family: Arial, Helvetica, sans-serif;           
+            
+         }
+          
+          /* Float four columns side by side */
+      .column {
+        float: left;
+        width: 25%;
+         padding:  10px;
+         }
+          
+
+       
+   /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -5px;}
+          
+   /* Clear floats after the columns */
+   .row:after {
+      content: "";
+      display: table;
+       clear: both;
+        }
+          
+    /* Style the counter cards */
+          .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+            padding: 16px;
+            text-align: center;
+            background-color: #f1f1f1;
+          }
+          
+    /* Responsive columns - one column layout (vertical) on small screens */
+          @media screen and (max-width: 600px) {
+            .column {
+              width: 100%;
+              display: block;
+              margin-bottom: 20px;
+            }
+          }
+
+        /*........................................*/
+        .div a{
+        	text-decoration: none;
+        	color: white;
+        }
+        
+        
+        .part1{
+                background-color: #04AA6D;
+                padding: 50px 15%;
+            }
+        .part1 h1,p{
+                color: white;
+            }
+            
+        .part2{
+                width: 100%;
+                display: flex;
+                background-color: white;
+            }
+        .part2_left{
+                width: 50%;
+                padding: 100px 100px;
+            }
+       .part2_right{
+                width: 50%;
+                padding: 20px 20px;
+            }
+      .part2_right i{
+                color: #04AA6D;
+            }
+            .img1{
+                width: 130px;
+            }
+    
+            .part3_a{
+                margin-top: 5%;
+            }
+            .part3_a p{
+                margin: 1% 0%;
+                font-size: 35px;
+            }
+            .part3_a hr{
+                width: 70%;
+                height: 8px;
+                background-color: white;
+            }
+            .part3_b{
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                margin: 1% 0%;
+            }
+            .part3_b_a{
+                width: 11%;
+                padding: 10px;
+                margin-left: 10px;
+            }
+            .circle{
+                border: 1px solid black;
+                background-color: gray;
+                color: white;
+                margin: 50px 0px;
+                padding: 5px 10px;
+                font-size: 20px;
+                border-radius: 50%;
+            }
+        
+      
